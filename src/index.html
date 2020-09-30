@@ -26,32 +26,113 @@
 <body>
 
     <div class="container">
+        <h1 class="text-center pt-4 pb-5">Weight Converter</h1>
+        <!--? Converting from Kg to Lbs -->
         <div class="row justify-content-center text-center pt-3">
-            <div class="col-md-3">
-                <h3>KG to LBS</h3>
+            <div class="col-md-2">
+                <h4>Kg to Lbs</h4>
             </div>
-            <div class="col-md-3">
-                <input id="kilogram" type="text" />
+            <div class="col-md-2">
+                <input id="kilogramInput" type="text" />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <button id="kgButton" class="btn btn-success p" onclick="convertToKg()">CONVERT</button>
             </div>
-            <div class="col-md-3">
-                <h3 id="kg-display"></h3>
+            <div class="col-md-2">
+                <h4 id="lbs-display"></h4>
+            </div>
+            <div class="col-md-2">
+                <h3>pounds</h3>
             </div>
         </div>
-        <div class="row justify-content-center text-center pt-3">
-            <div class="col-md-3">
-                <h3>LBS to KG</h3>
+        <!--? Converting from Lbs to Kg -->
+        <div class="row justify-content-center text-center pt-2">
+            <div class="col-md-2">
+                <h4>Lbs to Kg</h4>
             </div>
-            <div class="col-md-3">
-                <input id="pound" type="text" />
+            <div class="col-md-2">
+                <input id="poundInput" type="text" />
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <button id="lbsButton" class="btn btn-success " onclick="convertToLbs()">CONVERT</button>
             </div>
-            <div class="col-md-3">
-                <h3 id="lbs-display"></h3>
+            <div class="col-md-2">
+                <h3 id="kg-display"></h3>
+            </div>
+            <div class="col-md-2">
+                <h3>kilograms</h3>
+            </div>
+        </div>
+        <!--? Converting from Kg to grams -->
+        <div class="row justify-content-center text-center pt-2">
+            <div class="col-md-2">
+                <h4>Kg to Grams</h4>
+            </div>
+            <div class="col-md-2">
+                <input id="kilo" type="text" />
+            </div>
+            <div class="col-md-2">
+                <button id="gramsButton" class="btn btn-success " onclick="convertFromKgToGrams()">CONVERT</button>
+            </div>
+            <div class="col-md-2">
+                <h3 id="kg-to-grams-display"></h3>
+            </div>
+            <div class="col-md-2">
+                <h3>grams</h3>
+            </div>
+        </div>
+        <!--? Converting from Lbs to grams -->
+        <div class="row justify-content-center text-center pt-2">
+            <div class="col-md-2">
+                <h4>Lbs to Grams</h4>
+            </div>
+            <div class="col-md-2">
+                <input id="lbs" type="text" />
+            </div>
+            <div class="col-md-2">
+                <button id="gramsButton" class="btn btn-success " onclick="convertFromLbsToGrams()">CONVERT</button>
+            </div>
+            <div class="col-md-2">
+                <h3 id="lbs-to-grams-display"></h3>
+            </div>
+            <div class="col-md-2">
+                <h3>grams</h3>
+            </div>
+        </div>
+        <!--? Converting from Grams to Kilograms -->
+        <div class="row justify-content-center text-center pt-2">
+            <div class="col-md-2">
+                <h4>Grams to Kg</h4>
+            </div>
+            <div class="col-md-2">
+                <input id="grams-one" type="text" />
+            </div>
+            <div class="col-md-2">
+                <button id="gramsButton" class="btn btn-success " onclick="convertFromGramstoKg()">CONVERT</button>
+            </div>
+            <div class="col-md-2">
+                <h3 id="grams-to-kg-display"></h3>
+            </div>
+            <div class="col-md-2">
+                <h3>kilograms</h3>
+            </div>
+        </div>
+        <!--? Converting from Grams to Kilograms -->
+        <div class="row justify-content-center text-center pt-2">
+            <div class="col-md-2">
+                <h4>Grams to Lbs</h4>
+            </div>
+            <div class="col-md-2">
+                <input id="grams-two" type="text" />
+            </div>
+            <div class="col-md-2">
+                <button id="gramsButton" class="btn btn-success " onclick="convertFromGramstoLbs()">CONVERT</button>
+            </div>
+            <div class="col-md-2">
+                <h3 id="grams-to-lbs-display"></h3>
+            </div>
+            <div class="col-md-2">
+                <h3>pounds</h3>
             </div>
         </div>
     </div>
