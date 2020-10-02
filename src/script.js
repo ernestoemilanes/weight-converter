@@ -42,3 +42,9 @@ function convertFromGramstoLbs() {
     let gramsToLbsConversion = (gramsTwo / 453.6);
     document.querySelector('#grams-to-lbs-display').innerHTML = gramsToLbsConversion;
 }
+
+function convertFromGramstoDwt() {
+    let gramsThree = document.querySelector('#grams-three').value;
+    let gramsToDwtConversion = (gramsThree / 0.643);
+    document.querySelector('#grams-to-dwt-display').innerHTML = gramsToDwtConversion;
+}
